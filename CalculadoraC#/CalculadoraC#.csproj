@@ -67,6 +67,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="assets\JS\script.js" />
     <Content Include="Default.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
