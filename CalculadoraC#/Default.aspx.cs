@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Data;
-using System.Linq;
-using System.Web;
 using System.Web.UI;
-using System.Web.UI.WebControls;
 
 namespace CalculadoraC_
 {
@@ -12,30 +8,31 @@ namespace CalculadoraC_
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
         }
 
-
-        protected void ButtonEquals_Click(object sender, EventArgs e)
+        protected void realizarOp(string op)
         {
             try
             {
-                string expression = TextBox1.Text;
-
                 DataTable dt = new DataTable();
-                var result = dt.Compute(expression, "");
+                var result = dt.Compute(op, "");
 
-                TextBox1.Text = result.ToString();
+                TextBox1.Text = result.ToString(); 
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                TextBox1.Text = "Erro";
+                TextBox1.Text = "Erro"; 
             }
+        }
+
+        protected void ButtonEquals_Click(object sender, EventArgs e)
+        {
+            realizarOp(TextBox1.Text); 
         }
 
         protected void ButtonClear_Click(object sender, EventArgs e)
         {
-            TextBox1.Text = "0";
+            TextBox1.Text = "0"; 
         }
     }
 }

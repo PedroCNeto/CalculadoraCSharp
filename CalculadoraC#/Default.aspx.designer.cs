@@ -141,13 +141,13 @@ namespace CalculadoraC_
         protected global::System.Web.UI.WebControls.Button ButtonMult;
 
         /// <summary>
-        /// Controle ButtonEquals.
+        /// Controle ButtonVirg.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button ButtonEquals;
+        protected global::System.Web.UI.WebControls.Button ButtonVirg;
 
         /// <summary>
         /// Controle Button0.
@@ -157,6 +157,15 @@ namespace CalculadoraC_
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button Button0;
+
+        /// <summary>
+        /// Controle ButtonEquals.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button ButtonEquals;
 
         /// <summary>
         /// Controle ButtonDiv.

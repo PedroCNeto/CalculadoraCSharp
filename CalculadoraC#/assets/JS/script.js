@@ -13,3 +13,6 @@ function updateDisplay(value) {
         display.value += value;
     }
 }
+
+document.getElementById("TextBox1").readOnly = true;
+

@@ -13,7 +13,7 @@
         <div class="container mt-5">
             <div class="row mb-3">
                 <div class="col-12 text-center">
-                    <asp:TextBox ID="TextBox1" runat="server" CssClass="h3" ReadOnly="true">0</asp:TextBox>
+                    <asp:TextBox ID="TextBox1" runat="server" CssClass="h3">0</asp:TextBox>
                 </div>
             </div>
 
@@ -60,11 +60,14 @@
                 </div>
             </div>
             <div class="row mt-2">
-                <div class="col-6">
-                    <asp:Button ID="ButtonEquals" runat="server" Text="=" CssClass="btn btn-primary w-100" OnClick="ButtonEquals_Click"/>
+                <div class="col-3">
+                    <asp:Button ID="ButtonVirg" runat="server" Text="." CssClass="btn btn-primary w-100" OnClientClick="updateDisplay('.'); return false;" />
                 </div>
                 <div class="col-3">
                     <asp:Button ID="Button0" runat="server" Text="0" CssClass="btn btn-primary w-100" OnClientClick="updateDisplay('0'); return false;" />
+                </div>
+                <div class="col-3">
+                    <asp:Button ID="ButtonEquals" runat="server" Text="=" CssClass="btn btn-primary w-100" OnClick="ButtonEquals_Click"/>
                 </div>
                 <div class="col-3">
                     <asp:Button ID="ButtonDiv" runat="server" Text="/" CssClass="btn btn-primary w-100" OnClientClick="updateDisplay('/'); return false;" />
